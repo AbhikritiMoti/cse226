@@ -1,0 +1,6 @@
+<resources>
+    <declare-styleable name="DotsIndicator">
+        <attr name="dotsSelectedWidthFactor" format="float" />
+        <!-- Add other custom attributes here if needed -->
+    </declare-styleable>
+</resources>

@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".rateBlankFragment">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="match_parent"
+            android:layout_height="220dp"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            app:srcCompat="@drawable/feedback" />
+
+        <RatingBar
+            android:id="@+id/simpleRatingBar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@id/imageView"
+            android:layout_marginTop="20dp"
+            android:numStars="5"
+            android:paddingLeft="5dp"
+            android:paddingRight="1dp"
+            android:progressBackgroundTint="#C1C0E6"
+            android:progressTint="#1a61f4"
+            android:rating="3.5"
+            android:secondaryProgressTint="#1a61f4"
+            android:stepSize="0.5" />
+
+        <TextView
+            android:id="@+id/exp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@id/simpleRatingBar"
+            android:layout_marginStart="30dp"
+            android:layout_marginEnd="30dp"
+            android:textColor="@color/black"
+            android:gravity="center"
+            android:textSize="15dp"
+            android:textStyle="bold"
+            android:text="How was your experience?"/>
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@id/exp"
+            android:layout_marginStart="30dp"
+            android:layout_marginEnd="30dp"
+            android:layout_marginTop="12dp"
+            android:textColor="@color/black"
+            android:textSize="25dp"
+            android:textStyle="italic"
+            android:visibility="gone"/>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cardView3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:cardBackgroundColor="@color/white"
+            app:cardCornerRadius="20dp"
+            app:cardElevation="10dp"
+            app:cardMaxElevation="12dp"
+            app:cardPreventCornerOverlap="true"
+            app:cardUseCompatPadding="true"
+            android:layout_below="@id/textView">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <EditText
+                    android:id="@+id/feedback"
+                    android:layout_width="match_parent"
+                    android:layout_height="95dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginBottom="10dp"
+                    android:background="@drawable/custom_et"
+                    android:backgroundTintMode="@color/black"
+                    android:ems="10"
+                    android:textColor="@color/black"
+                    android:gravity="start|top"
+                    android:textColorHint="#666666"
+                    android:hint="  Any Feedback ? \n  We would love to hear from you!"
+                    android:inputType="textMultiLine"
+                    android:paddingLeft="10dp"
+                    android:paddingTop="10dp" />
+
+                <Button
+                    android:id="@+id/submitButton"
+                    android:layout_width="254dp"
+                    android:layout_height="51dp"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginBottom="20dp"
+                    android:background="@drawable/custom_btn"
+                    android:padding="10dp"
+                    android:text="Rate"
+                    android:textSize="18dp"
+                    app:backgroundTint="@null"
+                    app:cornerRadius="25sp" />
+
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/cardView3"
+            android:layout_marginStart="20dp"
+            android:text="Recent Reviews : "
+            android:textColor="@color/black"
+            android:textSize="24dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/recentH"
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:layout_below="@id/textView3"
+            android:hint="Your past recent reviews appear here."
+            android:textColorHint="#666666"
+            android:paddingLeft="20dp"
+            android:paddingTop="10dp"
+            android:textStyle="italic"
+            android:textSize="18sp"
+            android:layout_marginHorizontal="10dp"
+            android:textColor="@color/black" />
+
+    </RelativeLayout>
+</ScrollView>

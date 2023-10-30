@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".createBlankFragment">
+
+    <EditText
+        android:id="@+id/c_id"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Id" />
+
+    <EditText
+        android:id="@+id/c_sub"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="subject" />
+
+    <EditText
+        android:id="@+id/opt1name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Name1" />
+
+    <TextView
+        android:id="@+id/opt1count"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="0"/>
+
+    <EditText
+        android:id="@+id/opt2name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Name2" />
+
+    <TextView
+        android:id="@+id/opt2count"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="0"/>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <Button
+            android:id="@+id/addBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Add" />
+
+
+        <Button
+            android:id="@+id/display"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:text="Display" />
+    </RelativeLayout>
+
+    <ListView
+        android:id="@+id/listView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:listitem="@layout/list_item" />
+
+</LinearLayout>

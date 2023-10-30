@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:background="@drawable/bg"
+    android:orientation="vertical"
+    tools:context=".UserType">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:background="@drawable/wave"
+        >
+
+
+<!--        <TextView-->
+<!--            android:id="@+id/header"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_marginBottom="60dp"-->
+<!--            android:gravity="center"-->
+<!--            android:text="#MakingDemocracyDigital"-->
+<!--            android:textColor="@color/white"-->
+<!--            android:textSize="38sp"-->
+<!--            android:textStyle="bold" />-->
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cv0"
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:layout_margin="16dp"
+            app:cardCornerRadius="20dp"
+            app:cardElevation="20dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textStyle="bold"
+                    android:textSize="24dp"
+                    android:layout_marginStart="12dp"
+                    android:layout_marginTop="30dp"
+                    android:textColor="@color/black"
+                    android:text="Vote For Change" />
+
+                <TextView
+
+                    android:layout_width="160dp"
+                    android:layout_marginStart="12dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_height="wrap_content"
+                    android:text="Join and support our active campaign"
+                     />
+
+
+            </RelativeLayout>
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cv1"
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:layout_margin="16dp"
+            app:cardCornerRadius="20dp"
+            app:cardElevation="20dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:id="@+id/heading1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textStyle="bold"
+                    android:textSize="24dp"
+                    android:layout_marginStart="12dp"
+                    android:layout_marginTop="30dp"
+                    android:textColor="@color/black"
+                    android:text="Vote For Change" />
+
+                <TextView
+                    android:id="@+id/description1"
+                    android:layout_width="160dp"
+                    android:layout_marginStart="12dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_height="wrap_content"
+                    android:text="Join and support our active campaign"
+                    android:layout_below="@id/heading1" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_toEndOf="@+id/heading1"
+                    android:gravity="center">
+                    <ImageView
+                        android:id="@+id/image1"
+                        android:padding="10dp"
+                        android:layout_width="125dp"
+                        android:layout_height="match_parent"
+                        android:src="@drawable/voting" />
+
+                </LinearLayout>
+
+
+            </RelativeLayout>
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cv2"
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:layout_margin="16dp"
+            app:cardCornerRadius="20dp"
+            app:cardElevation="20dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:id="@+id/heading2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textStyle="bold"
+                    android:textSize="24dp"
+                    android:layout_marginStart="12dp"
+                    android:layout_marginTop="30dp"
+                    android:textColor="@color/black"
+                    android:text="Create A Campaign " />
+
+                <TextView
+                    android:id="@+id/description2"
+                    android:layout_width="160dp"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/heading2"
+                    android:layout_marginStart="12dp"
+                    android:layout_marginTop="5dp"
+                    android:text="Launch Your Own Campaign Today!" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_toEndOf="@+id/heading2"
+                    android:gravity="center">
+                    <ImageView
+                        android:id="@+id/image2"
+                        android:layout_width="125dp"
+                        android:padding="10dp"
+                        android:layout_height="match_parent"
+                        android:src="@drawable/campaign" />
+                </LinearLayout>
+            </RelativeLayout>
+        </androidx.cardview.widget.CardView>
+    </LinearLayout>
+
+
+
+</LinearLayout>

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:layout_marginTop="10dp"
+    android:layout_marginBottom="10dp">
+
+    <!-- Add your dots here (You can customize their appearance) -->
+    <View
+        android:id="@+id/dot1"
+        android:layout_width="12dp"
+        android:layout_height="12dp"
+        android:layout_marginEnd="4dp"
+        android:background="@drawable/c1" />
+
+    <View
+        android:id="@+id/dot2"
+        android:layout_width="12dp"
+        android:layout_height="12dp"
+        android:layout_marginEnd="4dp"
+        android:background="@drawable/c2" />
+
+    <View
+        android:id="@+id/dot3"
+        android:layout_width="12dp"
+        android:layout_height="12dp"
+        android:layout_marginEnd="4dp"
+        android:background="@drawable/c3" />
+
+    <!-- Add more dots as needed -->
+</LinearLayout>

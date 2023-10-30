@@ -1,0 +1,14 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Base.Theme.WeVote" parent="Theme.MaterialComponents.DayNight.DarkActionBar">
+        <!-- Customize your light theme here. -->
+        <!-- <item name="colorPrimary">@color/my_light_primary</item> -->
+
+        <!-- Define the status bar color -->
+        <item name="android:statusBarColor" tools:targetApi="l"> @color/primary</item>
+    </style>
+
+    <style name="Theme.WeVote" parent="Base.Theme.WeVote" />
+
+
+</resources>
